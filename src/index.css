@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+  color: rgb(203, 203, 203);
+  background-color: rgb(26, 4, 42);
+}
+.background-home{
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+.sound-panel{
+  animation: showDivSlowly 1s linear;
+}
+
+@keyframes showDivSlowly {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+.button-panel:hover{
+  fill: rgb(255, 255, 255);
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+.loader-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loader-block {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #fff;
+  animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loader-block:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader-block:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-block:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader-block:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader-block:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader-block:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.loader-block:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.loader-block:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader_562 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  20% {
+    transform: scale(1, 2.5);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+  }
+
+  40% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+.playing-music{
+  margin-left: 6px;
+}
+
+.bar {
+  width: 3px;
+  height: 15px;
+  background: hsl(0, 3%, 69%);
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  animation: loader8913 1.2s linear infinite;
+}
+
+.bar1 {
+  animation-delay: 0.1s;
+}
+
+.bar2 {
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation-delay: 0.3s;
+}
+
+.bar4 {
+  animation-delay: 0.4s;
+}
+
+.bar5 {
+  animation-delay: 0.5s;
+}
+
+.bar6 {
+  animation-delay: 0.6s;
+}
+
+.bar7 {
+  animation-delay: 0.7s;
+}
+
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader8913 {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  50% {
+    transform: scaleY(1);
+    background: rgb(175, 177, 172);
+  }
+
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+
+.popping{
+  animation-name: popping;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes popping {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hiding{
+  transform: scale(0);
+}
+  
+
+@media screen and (max-width: 540px) {
+  *{
+    font-size: 12px;
+  }
+  
+  .rep-panel{
+      left: 0;
+  }
+
+  .vol-panel svg{
+    width: 18px;
+    height: 18px;
+  }
+
+  .vol-panel div input{
+    width: 82px;
+    height: 8px;
+  }
+  .track-info{
+    position: absolute;
+    text-align: center;
+    left:15px;
+    padding: 9px;
+    height: 30px;
+    width: 110px;
+  }
+  .track-info h3{
+    font-size: 10px;
+  }
+
+  .bar{
+    width: 3px;
+  }
+
+  .playing-music {
+    display: none;
+  }
+
+  .ambient-input{
+    width: 75px;
+    height: 16px;
+  }
+
+}
+  
+
+@media screen and (max-width: 280px){
+  *{
+    font-size: 10px;
+  }
+  .track-info h3{
+   font-size: 8px;
+  }
+  .track-info{
+    width: 85px;
+    height: 25px;
+  }
+
+  .vol-panel div input{
+    width: 60px;
+  }
+
+  .vol-panel {
+    height: 15px;
+  }
+
+
+}
+
+.credits{
+  font-size: 11px;
+}
+
+.credits a {
+  color: rgb(121, 172, 244);
+  font-size: 11px;
+}
