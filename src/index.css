@@ -223,7 +223,9 @@ body{
   }
   
   .rep-panel{
-      left: 0;
+      position: absolute;
+      left: 50;
+      bottom: 24px;
   }
 
   .vol-panel svg{
