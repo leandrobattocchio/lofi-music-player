@@ -20,6 +20,7 @@ body{
   background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  max-height: 100vh;
 }
 
 .sound-panel{
