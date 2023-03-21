@@ -18,7 +18,7 @@ export const VolumePanel = () => {
                         changeVolume(0)
                     }} />
                 }
-                {(volume < 50 && volume > 0.2) && <MinSoundIcon className={STYLES_VOLUME} onClick={() => {
+                {(volume <= 50 && volume >= 0.2) && <MinSoundIcon className={STYLES_VOLUME} onClick={() => {
                     previousSound.current = volume
                     changeVolume(0)
                 }} />
