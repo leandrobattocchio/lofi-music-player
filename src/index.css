@@ -226,6 +226,7 @@ body{
       position: absolute;
       left: 50;
       bottom: 24px;
+      margin-bottom: 0;
   }
 
   .vol-panel svg{

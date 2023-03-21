@@ -10,7 +10,7 @@ export const ReproductionPanel = () => {
     const STYLE_BUTTON = 'w-5 cursor-pointer button-panel'
 
     return (
-        <div className={`flex justify-center items-center px-5 py-2.5 ${BACKGROUND_STYLE.DARK} rep-panel`}>
+        <div className={`flex justify-center items-center mb-8 px-5 py-2.5 ${BACKGROUND_STYLE.DARK} rep-panel`}>
             <ButtonReproductor action={BUTTONS_ACTIONS.BACK} Icon={BackTrackIcon} className={STYLE_BUTTON} />
             {
                 isStoping
