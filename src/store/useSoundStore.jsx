@@ -7,7 +7,7 @@ export const useSoundStore = create((set, get) => ({
     action: null,
     volume: 100,
     loading: false,
-    background: BACKGROUNDS[1].src,
+    background: BACKGROUNDS[0].src,
     changeBackground: (newBackground) => {
         set({ background: newBackground })
     },
