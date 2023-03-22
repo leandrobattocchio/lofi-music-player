@@ -1,8 +1,8 @@
-import { BACKGROUND_STYLE } from '../const/const'
-import { useAmbientSound } from '../hooks/useAmbientSound'
-import { useShowButtonRadio } from '../hooks/useShowButtonRadio'
+import { BACKGROUND_STYLE } from '../../const/const'
+import { useAmbientSound } from '../../hooks/useAmbientSound'
+import { useShowButtonRadio } from '../../hooks/useShowButtonRadio'
 
-export const AmbientSound = ({ ambientSound, label, Icon }) => {
+export const AmbientButton = ({ ambientSound, label, Icon }) => {
     const { isShow, handleMouseEnter, handleMouseLeave } = useShowButtonRadio()
     const { changeVolume, handleSound, sound, volume } = useAmbientSound({ ambientSound })
 

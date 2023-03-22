@@ -1,4 +1,4 @@
-import { AmbientSound } from '../AmbientSound'
+import { AmbientButton } from '../buttons/AmbientButton'
 import { BirdIcon, RainIcon } from '../Icons'
 
 const AMBIENT_SOUNDS = {
@@ -9,8 +9,8 @@ const AMBIENT_SOUNDS = {
 export const AmbientPanel = () => {
     return (
         <div className='flex flex-col justify-center items-center absolute my-5 mx-5 gap-3'>
-            <AmbientSound Icon={RainIcon} label={'Rain'} ambientSound={AMBIENT_SOUNDS.RAIN} />
-            <AmbientSound Icon={BirdIcon} label={'Bird'} ambientSound={AMBIENT_SOUNDS.BIRD} />
+            <AmbientButton Icon={RainIcon} label={'Rain'} ambientSound={AMBIENT_SOUNDS.RAIN} />
+            <AmbientButton Icon={BirdIcon} label={'Bird'} ambientSound={AMBIENT_SOUNDS.BIRD} />
         </div>
     )
 }

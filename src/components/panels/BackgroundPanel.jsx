@@ -1,9 +1,9 @@
-import { BackgroundIcon } from './Icons'
-import { BACKGROUNDS, BACKGROUND_STYLE } from '../const/const'
-import { useSoundStore } from '../store/useSoundStore'
-import { useToggle } from '../hooks/useToggle'
+import { BackgroundIcon } from '../Icons'
+import { BACKGROUNDS, BACKGROUND_STYLE } from '../../const/const'
+import { useSoundStore } from '../../store/useSoundStore'
+import { useToggle } from '../../hooks/useToggle'
 
-const BackgroundMenu = () => {
+export const BackgroundPanel = () => {
     const [changeBackground] = useSoundStore((state) => [state.changeBackground])
     const { handleToggle, isShowing } = useToggle()
     const CLICKED_STYLE = `${isShowing ? 'scale-125 opacity-100' : ''}`
@@ -31,5 +31,3 @@ const BackgroundMenu = () => {
         </div>
     )
 }
-
-export default BackgroundMenu

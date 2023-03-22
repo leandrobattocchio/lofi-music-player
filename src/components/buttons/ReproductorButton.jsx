@@ -1,6 +1,6 @@
-import { useSoundStore } from '../store/useSoundStore'
+import { useSoundStore } from '../../store/useSoundStore'
 
-export const ButtonReproductor = ({ action, Icon, className }) => {
+export const ReproductorButton = ({ action, Icon, className }) => {
     const [changeAction] = useSoundStore(state => [state.changeAction])
 
     return (
