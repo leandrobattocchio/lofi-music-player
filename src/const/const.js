@@ -6,16 +6,16 @@ export const BUTTONS_ACTIONS = {
 }
 
 export const SOUNDTRACKS = [
-    { src: 'https://dl.dropboxusercontent.com/s/g4zsdha9rw6o7rn/lofi_1.mp3?dl=0', title: 'I still love you' },
-    { src: 'https://dl.dropboxusercontent.com/s/nkmn6nqom5a364d/lofi_2.mp3?dl=0', title: 'I only think about you' },
-    { src: 'https://dl.dropboxusercontent.com/s/7wgpkiqiu8tpksc/lofi_3.mp3?dl=0', title: 'My own story' },
-    { src: 'https://dl.dropboxusercontent.com/s/v8i6h3e9wts2p71/lofi_4.mp3?dl=0', title: 'Bliss' },
-    { src: 'https://dl.dropboxusercontent.com/s/ydu6kvalhp6cplk/lofi_5.mp3?dl=0', title: 'Different sky' },
-    { src: 'https://dl.dropboxusercontent.com/s/jq96xg6ykjxnmkm/lofi_6.mp3?dl=0', title: 'Error 404' },
-    { src: 'https://dl.dropboxusercontent.com/s/pgaoo55vj0u9kl5/lofi_7.mp3?dl=0', title: 'Melody' },
-    { src: 'https://dl.dropboxusercontent.com/s/aup8zidyd0b0tmm/lofi_8.mp3?dl=0', title: 'Free thinking' },
-    { src: 'https://dl.dropboxusercontent.com/s/qfxgcpf8edmxrmn/lofi_9.mp3?dl=0', title: 'Lonely Night' },
-    { src: 'https://dl.dropboxusercontent.com/s/uoliu2fqbp3rodx/lofi_10.mp3?dl=0', title: 'Tokyo' }
+    { src: 'https://opengameart.org/sites/default/files/A%20cup%20of%20tea_0.mp3', title: 'A cup of tea' },
+    { src: 'https://opengameart.org/sites/default/files/Cue_0.mp3', title: 'Cue' },
+    { src: 'https://opengameart.org/sites/default/files/Bartender_0.mp3', title: 'Bartender' },
+    { src: 'https://opengameart.org/sites/default/files/Cat%20caffe_0.mp3', title: 'Cat caffe' },
+    { src: 'https://opengameart.org/sites/default/files/Rainy%20Forest_0.mp3', title: 'Rainy forest' },
+    { src: 'https://opengameart.org/sites/default/files/Countryside_0.mp3', title: 'Countryside' },
+    { src: 'https://opengameart.org/sites/default/files/Oceanside_0.mp3', title: 'Oceanside' },
+    { src: 'https://opengameart.org/sites/default/files/Florist_0.mp3', title: 'Florist' },
+    { src: 'https://opengameart.org/sites/default/files/Morning%20rain_0.mp3', title: 'Morning rain' },
+    { src: 'https://opengameart.org/sites/default/files/ChillLofiR_0.mp3', title: 'Chill lofi' }
 ]
 
 export const BACKGROUNDS = [
