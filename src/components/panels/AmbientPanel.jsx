@@ -2,8 +2,8 @@ import { AmbientButton } from '../buttons/AmbientButton'
 import { BirdIcon, RainIcon } from '../Icons'
 
 const AMBIENT_SOUNDS = {
-    BIRD: 'https://dl.dropboxusercontent.com/s/euixmm7cf9l0y6h/birds.mp3?dl=0',
-    RAIN: 'https://dl.dropboxusercontent.com/s/hths30pv5afz312/rain.mp3?dl=0'
+    BIRD: 'https://opengameart.org/sites/default/files/birds-isaiah658_0.ogg',
+    RAIN: 'https://opengameart.org/sites/default/files/rain_on_window_loop.wav'
 }
 /// Add more ambient sounds in a future
 export const AmbientPanel = () => {
