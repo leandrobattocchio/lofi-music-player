@@ -17,12 +17,7 @@ export const useAmbientSound = ({ ambientSound }) => {
             src: [ambientSound],
             loop: true,
             volume: volume / 100,
-            xhr: {
-                method: 'GET',
-                mode: 'no-cors',
-                credentials: 'omit',
-                cache: 'default'
-            }
+            html5: true
         })
         ambient.play()
         setSound(ambient)
