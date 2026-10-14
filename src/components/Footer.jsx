@@ -2,9 +2,9 @@
 const Footer = () => {
     return (
         <div className='credits h-4 absolute bottom-2 left-3'>
-            All music created by ~
-            <a className="text-sm" href='https://www.youtube.com/channel/UCyD59CI7beJDU493glZpxgA' target='_blank' rel="noreferrer">
-                lofi geek
+            Music by TAD & omfgdude · sounds by alxl & isaiah658 (CC0) via{' '}
+            <a className="text-sm" href='https://opengameart.org/content/lofi-compilation' target='_blank' rel="noreferrer">
+                OpenGameArt
             </a>
         </div>
     )
