@@ -77,7 +77,8 @@ const useSound = () => {
             const newSoundtrack = new Howl({
                 src,
                 onend: () => onEndedSound(),
-                volume: volume / 100
+                volume: volume / 100,
+                html5: true
             })
             changeSound(newSoundtrack)
             changeTitle(newTitlte)
@@ -93,12 +94,7 @@ const useSound = () => {
                 src,
                 onend: () => onEndedSound(),
                 volume: volume / 100,
-                xhr: {
-                    method: 'GET',
-                    mode: 'no-cors',
-                    credentials: 'omit',
-                    cache: 'default'
-                }
+                html5: true
             })
             changeSound(soundtrack)
             changeTitle(title)
